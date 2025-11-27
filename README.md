@@ -89,3 +89,133 @@ Cricket-player-management/
 └── README.md
 
 
+
+
+```
+
+---
+
+##  Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/aslam347/Cricket-player-management.git
+cd Cricket-player-management
+```
+
+### 2. Create Virtual Environment & Install Dependencies
+
+```bash
+python -m venv venv
+source venv/bin/activate     # For Linux/Mac
+venv\Scripts\activate        # For Windows
+
+pip install -r requirements.txt
+```
+
+### 3. Setup MySQL Database
+
+- Create a database named `cricket_db` (or your choice).
+- Create the `cricket_db` table:
+
+```sql
+CREATE TABLE players (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  age INT,
+  role VARCHAR(50),
+  matches INT,
+  runs INT,
+  wickets INT,
+  strike_rate FLOAT,
+  economy FLOAT
+);
+
+```
+- Update your MySQL credentials based on your requirements
+
+---
+
+##  Running the Project
+
+### 1. Start FastAPI Backend
+
+```bash
+cd Fast_api_learning
+uvicorn backend:app --reload
+
+```
+
+### 2. Start Streamlit Frontend
+
+```bash
+cd Fast_api_learning
+streamlit run app.py
+
+```
+
+---
+
+##  Dashboard Preview
+
+📊 Dashboard Preview
+
+📈 Best Batsman & Best Bowler analytics
+
+📊 Role-based performance comparison
+
+📉 Graphs using Matplotlib + Pandas
+
+🤖 Data-driven Best XI generator
+
+📁 CSV export (for ML training)
+
+🔐 Secure Admin Panel
+
+🧠 AI-style insights & summary report
+
+---
+
+##  TODO / Future Improvements
+
+🔮 Future Improvements (For AI/ML Path)
+
+- Add Machine Learning model to predict player performance
+
+- Add LLM-based cricket match insights
+
+- Add Power BI / Tableau dashboard
+
+- Deploy on AWS / Azure
+
+- Add Player Recommendation System
+
+- Add Fantasy Cricket Team Generator
+---
+
+##  Author
+
+**Mohamed Aslam**  
+ [LinkedIn](www.linkedin.com/in/mohamed-aslam-1b99b8212)  
+ [GitHub](https://github.com/aslam347)
+
+---
+
+##  License
+
+MIT License
+
+Copyright (c) 2025 Mohamed Aslam M
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
