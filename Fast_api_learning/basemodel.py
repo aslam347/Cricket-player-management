@@ -1,11 +1,11 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
-class Cricket(BaseModel):
-    name:str = Field(..., min_length=3, max_length=20)
-    age:int = Field(..., ge=10, le=60)
-    score:int = Field(..., ge=0, le=200)
-
-class Ipl(BaseModel):
-    name:str
-    age:int
-    score:int
+class PlayerCreate(BaseModel):
+    name: str
+    role: str
+    matches: int
+    runs: int
+    wickets: int
+    strike_rate: float
+    economy_rate: float
+    best_performance: str
