@@ -87,6 +87,8 @@ Cricket-player-management/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+└──Images
+
 
 
 
